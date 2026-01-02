@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="hotelcheckapp/hotelcheckapp.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+</Solution>
