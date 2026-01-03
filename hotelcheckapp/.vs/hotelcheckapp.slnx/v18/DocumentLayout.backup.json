@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\VS Code\\Web Development\\Visual Studio\\hotelcheckapp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FCAD2944-4B1C-4FC0-C706-FE6D234EB6A9}|hotelcheckapp\\hotelcheckapp.esproj|d:\\vs code\\web development\\visual studio\\hotelcheckapp\\hotelcheckapp\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FCAD2944-4B1C-4FC0-C706-FE6D234EB6A9}|hotelcheckapp\\hotelcheckapp.esproj|solutionrelative:hotelcheckapp\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\VS Code\\Web Development\\Visual Studio\\hotelcheckapp\\hotelcheckapp\\index.html",
+              "RelativeDocumentMoniker": "hotelcheckapp\\index.html",
+              "ToolTip": "D:\\VS Code\\Web Development\\Visual Studio\\hotelcheckapp\\hotelcheckapp\\index.html*",
+              "RelativeToolTip": "hotelcheckapp\\index.html*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-01-03T07:46:25.018Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

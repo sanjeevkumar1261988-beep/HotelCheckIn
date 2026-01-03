@@ -8,44 +8,55 @@ axios.defaults.baseURL = import.meta.env.VITE_BACKEND_URL; //to set backend url 
 const AppContext = createContext();
 
 export const AppContextProvider = ({ children }) => {
-  const [state, setState] = useState("login");
-  const [showLogin, setShowLogin] = useState(false);
-  const [user, setUser] = useState(null);
-  const [authLoading, setAuthLoading] = useState(true);
-  const navigate = useNavigate();
+    const [state, setState] = useState("login");
+    const [showLogin, setShowLogin] = useState(false);
+    const [user, setUser] = useState(null);
+    const [authLoading, setAuthLoading] = useState(true);
+    const navigate = useNavigate();
 
-  const fetchUser = async () => {
-  try {
-    const res = await axios.get("/api/user/is-auth");
-    if (res.data.success) {
-      setUser(res.data.user);
-    } else {
-      setUser(null);
-    }
-  } catch {
-    setUser(null);
-  } finally {
-    setAuthLoading(false);
-  }
-};
+    const fetchUser = async () => {
+        try {
+            const res = await axios.get("/api/user/is-auth");
+            if (res.data.success) {
+                setUser(res.data.user);
+            } else {
+                setUser(null);
+            }
+        } catch {
+            setUser(null);
+        } finally {
+            setAuthLoading(false);
+        }
+    };
 
-useEffect(() => {
-  fetchUser();
-}, []);
+    const logout = async () => {
+        try {
+            await axios.post("/api/user/logout");
+        } finally {
+            setUser(null);
+            navigate("/");
+        }
+    };
 
-  const values = {
-    state,
-    setState,
-    showLogin,
-    setShowLogin,
-    axios,
-    setUser,
-    navigate,
-    user,
-    authLoading,
-  };
 
-  return <AppContext.Provider value={values}>{children}</AppContext.Provider>;
+    useEffect(() => {
+        fetchUser();
+    }, []);
+
+    const values = {
+        state,
+        setState,
+        showLogin,
+        setShowLogin,
+        axios,
+        setUser,
+        navigate,
+        user,
+        authLoading,
+        logout
+    };
+
+    return <AppContext.Provider value={values}>{children}</AppContext.Provider>;
 };
 
 export const useAppContext = () => useContext(AppContext);

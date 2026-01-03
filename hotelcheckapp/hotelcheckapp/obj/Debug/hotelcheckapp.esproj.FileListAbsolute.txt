@@ -1,0 +1,1 @@
+D:\VS Code\Web Development\Visual Studio\hotelcheckapp\hotelcheckapp\obj\Debug\hotelcheckapp.esproj.CoreCompileInputs.cache
